@@ -22,8 +22,8 @@ public class SMSUtils {
 	public static void sendMessage(String signName, String templateCode,String phoneNumbers,String param){
 		//RAM用户密钥
 		DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou",
-				"LTAI5tJvhrZBtLjDqjsvCxMz",
-				"HHaLEPWAStMW1pvLMkSkSKEbueWWGv");
+				"",
+				"");
 		IAcsClient client = new DefaultAcsClient(profile);
 
 		SendSmsRequest request = new SendSmsRequest();
