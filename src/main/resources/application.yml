@@ -1,0 +1,27 @@
+# 配置tomcat信息
+server:
+  port: 80
+# 配置数据源信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:13306/reggie
+    username: root
+    password: 123321
+# mvc配置信息
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true # 开启restful
+# 配置mybatis_plus信息
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # springboot的配置文件
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+  type-aliases-package: com.mayifan.pojo
+# 项目的配置信息
+reggie:
+  imgpath: E:\upload\images\food # image的本地存放路径
